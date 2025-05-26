@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Protected Page</title>
+</head>
+<body>
+  <script>
+    function checkPassword() {
+      let password = prompt("Enter password:");
+      if (password === "yourPassword") {
+        alert("Correct password!");
+        // Proceed to show content or redirect
+      } else {
+        alert("Incorrect password.");
+        // Optionally, redirect or take other action
+        window.location.href = ""; // Redirect to current page
+      }
+    }
+
+    checkPassword();
+  </script>
+
+  <h1>Welcome to the protected page!</h1>
+</body>
+</html>
